@@ -25,6 +25,17 @@ surfacepro7-hackintosh
 ### 已知问题
 - hidpi下会闪屏，切换到其他分辨率或接入外接1080P显示器即可解决闪屏。
 
+### 触摸板命令行设置：
+//设置轻触点击
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+sudo defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+sudo defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+sudo defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+//连续双击选中
+defaults write com.apple.AppleMultitouchTrackpad Dragging -bool true
+sudo defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Dragging -bool true
+
 ## 感谢：
 - @zxystd(wifi、蓝牙驱动) https://github.com/OpenIntelWireless/itlwm
 - @0xFireWolf(驱动cd clock、解决sku、解决dvmt60M等问题) https://github.com/0xFireWolf/WhateverGreen
