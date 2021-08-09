@@ -26,6 +26,9 @@ surfacepro7-hackintosh
 - hidpi下会闪屏，切换到其他分辨率或接入外接1080P显示器即可解决闪屏。
 
 ### 触摸板命令行设置：
+#### 图形方式
+- 把OC配置电源配置启用，就能出现假的电源
+#### 命令行
 - 设置轻触点击
   defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
   sudo defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
